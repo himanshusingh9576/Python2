@@ -138,3 +138,9 @@ print(sum)
 
 #WAP to find the factorial of first n numbers. (using for)
 num3 = int(input("Enter user Input:- "))
+i = 1
+fact = 1
+while i <= num3:
+    fact *= i
+    i += 1
+print(fact)
