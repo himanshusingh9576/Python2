@@ -37,8 +37,8 @@ calc_sum(4, 8)# function call
 # 3. Useer-Defined function
 
 # Built-In Function
-print("Himanshu", end=" ")
-print("Singh")
+# print("Himanshu", end=" ")
+# print("Singh")
 
 # len()
 # type()
@@ -52,9 +52,21 @@ mul_num()
 
 #   Q1. WAF to print the length of a list. (list is the paramenter)
 cities = ["Delhi", "Noida", "Gurgaon", "Pune"]
-heroes = ["thor", "ironman", "superman", "shaktiman"]
+heroes = ["thor", "ironman", "superman", "shaktiman"] 
 def print_len(cities):
-    print(len(cities))
+    print(len(cities))   
+print_len(cities)
+print_len(heroes)
+
+#Q2. WAF to print the elements of a list in a single line.(list is the parameter)
+hero = ["thor", "ironman", "captain america", "shaktiman"]
+print(hero[0], end=" ")
+print(hero[1])
+
+def print_list(list):
+    for item in list:
+        print(item, end=" ")
+print_list(hero)
 
 
 
