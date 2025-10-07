@@ -45,21 +45,21 @@ calc_sum(4, 8)# function call
 # range()
 
 ## Default parameter
-def mul_num(a=2, b=1): # default parameter
+'''def mul_num(a=2, b=1): # default parameter
     print(a * b)
     # return a * b
-mul_num()
+mul_num()'''
 
 #   Q1. WAF to print the length of a list. (list is the paramenter)
-cities = ["Delhi", "Noida", "Gurgaon", "Pune"]
+''' cities = ["Delhi", "Noida", "Gurgaon", "Pune"]
 heroes = ["thor", "ironman", "superman", "shaktiman"] 
 def print_len(cities):
     print(len(cities))   
 print_len(cities)
-print_len(heroes)
+print_len(heroes) '''
 
 #Q2. WAF to print the elements of a list in a single line.(list is the parameter)
-hero = ["thor", "ironman", "captain america", "shaktiman"]
+''' hero = ["thor", "ironman", "captain america", "shaktiman"]
 print(hero[0], end=" ")
 print(hero[1])
 
@@ -68,36 +68,80 @@ def print_list(list):
         print(item, end=" ")
 
 print_list(hero)  
-print()
+print()  '''
 
 #Q3 WAF to find factorial of n.(n is thee parameter)
-n=5
+''' n=5
 def factorial(n):
     fact = 2
     for i in range(1, n+1):
         fact *= i
     print(fact)
-factorial(5)
+factorial(5) '''
 
 #Q4 WAF to convert USD TO INR
-def con_money(usd):
+'''def con_money(usd):
     # usd = n
     inr = usd * 85
     print(usd, "USD =", inr, "INR")
-con_money(2)
+con_money(2)'''
 
 #make a function enter a number and find that number is even or odd
-def decl_eo(num):
+'''def decl_eo(num):
     if num%2==0:
         print("even")
     else:
         print("odd")
-decl_eo(6)
+decl_eo(6) '''
 
 # RECURSION
+"""
 def show(n):
-    if (n==0):
+    # base case
+    if n==6:
         return
+    #recursive case
+    print(n)
+    show(n+1)
+    # print('END')
+show(1)  """
+
+# Recursion through factorial
+'''
+def fact(n):
+    if(n==0 or n==1):
+        return 1
+    return fact(n-1) * n
+print(fact(5))  '''
+
+# def fun(n):
+#     if n==0:
+#         return
+#     fun(n-1)
+#     print(n, end=" ")
+   
+# fun(3)
+
+## Q1. Write a recursive function to calculate the sum
+# of first n natural number
+def cal_sum(n):
+    if n==0: 
+        return 0
+    return cal_sum(n-1) + n
+sum=cal_sum(5)  
+print(sum)  
+
+##Q2. WRITE A RECURSIVE FUNCTION TO PRINT ALL ELEMENT IN
+# A LIST (HINT:- USE LIST AND INDEX AS PARAMETERS)
+def print_list(list, idx=0):
+    if (idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+fruits = ["mango", "orange", "litchi", "apple", "banana"]
+print_list(fruits)
+ 
+
     
 
 
