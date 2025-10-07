@@ -66,7 +66,39 @@ print(hero[1])
 def print_list(list):
     for item in list:
         print(item, end=" ")
-print_list(hero)
+
+print_list(hero)  
+print()
+
+#Q3 WAF to find factorial of n.(n is thee parameter)
+n=5
+def factorial(n):
+    fact = 2
+    for i in range(1, n+1):
+        fact *= i
+    print(fact)
+factorial(5)
+
+#Q4 WAF to convert USD TO INR
+def con_money(usd):
+    # usd = n
+    inr = usd * 85
+    print(usd, "USD =", inr, "INR")
+con_money(2)
+
+#make a function enter a number and find that number is even or odd
+def decl_eo(num):
+    if num%2==0:
+        print("even")
+    else:
+        print("odd")
+decl_eo(6)
+
+# RECURSION
+def show(n):
+    if (n==0):
+        return
+    
 
 
 
