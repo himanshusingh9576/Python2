@@ -139,7 +139,7 @@ def print_list(list, idx=0):
     print(list[idx])
     print_list(list, idx+1)
 fruits = ["mango", "orange", "litchi", "apple", "banana"]
-print_list(fruits)
+print_list(fruits)  
  
 
     
