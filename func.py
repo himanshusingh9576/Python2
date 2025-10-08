@@ -124,22 +124,35 @@ print(fact(5))  '''
 
 ## Q1. Write a recursive function to calculate the sum
 # of first n natural number
+'''
 def cal_sum(n):
     if n==0: 
         return 0
     return cal_sum(n-1) + n
 sum=cal_sum(5)  
-print(sum)  
+print(sum)   '''
 
 ##Q2. WRITE A RECURSIVE FUNCTION TO PRINT ALL ELEMENT IN
 # A LIST (HINT:- USE LIST AND INDEX AS PARAMETERS)
+'''
 def print_list(list, idx=0):
     if (idx == len(list)):
         return
     print(list[idx])
     print_list(list, idx+1)
 fruits = ["mango", "orange", "litchi", "apple", "banana"]
-print_list(fruits)  
+print_list(fruits)    '''
+
+
+## File input/output in python
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+print(type(data))
+f.close()
+#Reading a file 
+data = f.read()
+data = f.readline()
  
 
     
