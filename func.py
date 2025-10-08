@@ -168,10 +168,42 @@ f.write("I want to leanrn js")
 f.close()  '''
 
 ## If we have change in file
+'''
 f2 = open("demo.txt", "a")
 f2.write("Then i will move to reactjs")
-f2.close() 
- 
+f2.close() '''
+
+## Deleting a file
+# import os
+# os.remove("demo.txt")
+
+## Practice question
+#   Q1. CREATE A NEW FILE "prctice.txt" using python. add 
+# the following data in it
+'''
+with open("practice.txt", "w") as f:
+    f.write("Hi everyone\n we are learning File I/O\n")
+    f.write("using java.\n I like programming in java.")
+    '''
+
+#Q2.WAF that replace all occurances of java with python on above file
+'''with open("practice.txt", "r") as f:
+    data = f.read()
+new_data = data.replace("java", "Python")
+print(new_data)
+
+with open("practice.txt","w") as f:
+    f.write(new_data)  '''
+
+##Q3.Search if the word "learning" exiists in the file or not
+word = "learning"
+with open("practice.txt", "r") as f:
+    data = f.read()
+    if(data.find(word) != -1):
+        print("Found")
+    else:
+        print("not found")
+
  
 
     
