@@ -1,1 +1,3 @@
 Python is interpreted based language
+python is line by line executed
+
