@@ -145,6 +145,7 @@ print_list(fruits)    '''
 
 
 ## File input/output in python
+'''
 f = open("demo.txt", "r")
 
 data = f.read()
@@ -157,8 +158,19 @@ print(line2)
 # print(data)
 # print(type(data))
 f.close()
-#Reading a file    
+#Reading a file    '''
 
+## Write a file
+'''
+f=open("demo.txt", "w")
+
+f.write("I want to leanrn js")
+f.close()  '''
+
+## If we have change in file
+f2 = open("demo.txt", "a")
+f2.write("Then i will move to reactjs")
+f2.close() 
  
  
 
