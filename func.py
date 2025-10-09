@@ -196,14 +196,48 @@ with open("practice.txt","w") as f:
     f.write(new_data)  '''
 
 ##Q3.Search if the word "learning" exiists in the file or not
-word = "learning"
-with open("practice.txt", "r") as f:
-    data = f.read()
+'''
+def check_for_word():
+    word = "xlearning"
+    with open("practice.txt", "r") as f:
+        data = f.read()
     if(data.find(word) != -1):
         print("Found")
-    else:
-        print("not found")
+    else:    
+        print("not found")   
+check_for_word()  '''
 
+##Q4. WAF to find in which line of the file does the word
+## "learning" occur first print-1 if word not found.
+'''
+def check_for_line():
+    word = "learning"
+    data = True
+    line_no = 1
+    with open("practice.txt", "r") as f: 
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no += 1
+        return -1
+check_for_line()   '''
+
+##Q5.From a file containing numbers separated by comma, print the count of even numbers.
+# 1, 2, 76, 84, 90, 101
+            
+with open("practice.txt", "r") as f:
+    data = f.read()
+    print (data)
+
+    num = ""
+    for i in range(len(data)):
+        if data[i] == ",":
+            print(num)
+            num = ""
+        else:
+            num += data[i] 
  
 
     
