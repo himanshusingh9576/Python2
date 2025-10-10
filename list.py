@@ -24,5 +24,23 @@ movie3 = input("Enter Your third movie:- ")
 list = []
 list.append(movie1)
 list.append(movie2)
-list.append(movie3)
+# list.append(movie3)
 print(list)
+
+#OPeration in tuple
+'''
+print(len())
+print(marks[3])
+print(marks[-3])
+list.append(movie3)
+list.extend(movie3)
+list.insert(movie3)
+list.remove()
+list.pop()
+list.clear()
+slicing
+list.count()
+list.sort()
+list.reverse()
+list.copy()
+list.index() '''
