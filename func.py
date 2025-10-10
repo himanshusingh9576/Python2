@@ -237,7 +237,7 @@ with open("practice.txt", "r") as f:
             print(num)
             num = ""
         else:
-            num += data[i] 
+            num += data[i]   
  
 
     

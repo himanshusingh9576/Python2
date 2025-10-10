@@ -1,0 +1,6 @@
+tuple1 = ("hello", 2323, 3442, True, 4324.23)
+print(tuple1)
+print(tuple1[2])
+print(tuple1[-2])
+print(len(tuple1))
+print(type(tuple1))
